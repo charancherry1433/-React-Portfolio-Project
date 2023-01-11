@@ -4,7 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import React, { Component }  from 'react';
+import React from 'react';
 
 
 export const Banner = () => {
@@ -13,7 +13,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Software Developer Engineer", "Full Stack Developer", "Web Developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -58,8 +58,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`Hi! I'm Adireddi Charan Teja`} <span className="txt-rotate" dataperiod="1000" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
+                  <p>A highly passionate Software Developer seeking an opportunity to work with cutting‑edge technologies that will revolutionize the future. A self‑motivated and smart working individual who is deeply dedicated to improving his knowledge and gaining practical experience to contribute to the expansion of revolutionary technology.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
