@@ -1,0 +1,4 @@
+runs:
+  using: 'node16'
+  main: 'index.js'
+  post: 'cleanup.js'
